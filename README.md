@@ -6,16 +6,14 @@ int main() {
     printf("Enter the size of the array: ");
     scanf("%d", &n); 
 
-    int arr[n];  // Create an integer array of size n 
-
+    int arr[n];  
     printf("Enter elements of the array:\n");
     for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);  // Read elements into the array
-    }
+        scanf("%d", &arr[i]);  
 
     printf("Array elements are:\n");
     for (i = 0; i < n; i++) {
-        printf("%d ", arr[i]);  // Print array elements
+        printf("%d ", arr[i]);  
     }
 
     return 0;
