@@ -85,4 +85,30 @@ int main() {
     }
 
 
+#include<stdio.h>
+int main()
+{
+    int arr[9]={5,24,36,48,52,64,88,96,100};
+    int n=9,l,h,key,mid;
+    l=0,h=n-1,key=88;
+    while(l<=h)
+    {
+        mid=(l+h)/2;
+        if(mid==key)
+        {
+            printf("Found");
+        }
+        else if(mid<key){
+            l=mid+1;
+        }
+        else{
+            h=mid-1;
+        }
+    }
+   printf("%d",mid);
+    
+}
+
+
+
     
