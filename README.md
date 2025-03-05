@@ -109,8 +109,37 @@ int main()
     
 }
 
-
+///Creating a linked list.
 #include<stdio.h>
+#include<stdlib.h>
+typedef struct node{
+    int data;
+    struct node*next;
+}node;
+int main()
+{
+    node*first=(node*)malloc(sizeof(node));
+    first->data=10;
+    node*second=(node*)malloc(sizeof(node));
+    second->data=30;
+    node*third=(node*)malloc(sizeof(node));
+   third->data=50;
+
+  first->next=second;
+second->next=third;
+third->next=Null;
+     
+    printf("Linked list:");
+    node*temp=first;
+
+    while(temp){
+        printf("%d",temp->data);
+        temp=temp->next;
+    }
+    return 0;
+
+}
+
 
 
 
